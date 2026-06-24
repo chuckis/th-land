@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tutor Hub</title>
+<meta name="description" content="A decentralized tutoring platform. No commission, no middleman.">
+<link rel="icon" type="image/x-icon" href="/th-land/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/th-land/assets/index-Yecfg3s4.js"></script>
+  <link rel="stylesheet" crossorigin href="/th-land/assets/index-VjEuYqP9.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo" data-page="home">
+    <img src="/th-land/logo.png" alt="Tutor Hub" class="nav-logo-img"> <span class="nav-logo-text">Tutor <span>Hub</span></span>
+  </a>
+
+  <ul class="nav-links">
+    <li><a href="#how"      class="i18n" data-key="nav_how">How it works</a></li>
+    <li><a href="#features" class="i18n" data-key="nav_features">Features</a></li>
+    <li><a href="#" data-page="faq"   class="i18n" data-key="nav_faq">FAQ</a></li>
+    <li><a href="#" data-page="about" class="i18n" data-key="nav_about">About</a></li>
+  </ul>
+
+  <div class="nav-right">
+    <div class="lang-wrap" id="langWrap">
+      <button class="lang-trigger" id="langTrigger" aria-haspopup="true" aria-expanded="false">
+        <span id="langCurrent">🇬🇧 EN</span>
+        <span class="lang-chevron">▾</span>
+      </button>
+      <div class="lang-menu" role="menu" id="langMenu">
+        <div class="lang-option active" data-lang="en">English</div>
+        <div class="lang-option"        data-lang="ru">Русский</div>
+        <div class="lang-option"        data-lang="uk">Українська</div>
+      </div>
+    </div>
+
+    <button class="theme-btn" title="Toggle dark mode" aria-label="Toggle dark mode">
+      <span class="icon-moon">🌙</span>
+      <span class="icon-sun">☀️</span>
+    </button>
+
+    <a href="https://chuckis.github.io/tutorstr" class="btn-cta-nav i18n" data-key="cta_open">Open App →</a>
+  </div>
+</nav>
+
+<!-- HOME PAGE -->
+<div id="home-page" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+    <div class="hero-content">
+      <p class="hero-eyebrow i18n" data-key="hero_eyebrow">Decentralized tutoring platform</p>
+      <h1 class="hero-title">
+        <span class="i18n" data-key="hero_title_1">Tutoring </span><em class="i18n" data-key="hero_title_em">without the middleman</em>
+      </h1>
+      <p class="hero-sub i18n" data-key="hero_sub">No commission, no platform that owns your students. Your profile, your reviews, your history — forever yours.</p>
+      <div class="hero-cta">
+        <a href="https://chuckis.github.io/tutorstr" class="btn-primary i18n" data-key="cta_open">Open App →</a>
+        <a href="#how" class="btn-secondary i18n" data-key="cta_how">How it works</a>
+      </div>
+      <p class="hero-note i18n" data-key="hero_note">Works in browser · No install required</p>
+    </div>
+  </section>
+
+  <!-- CAROUSEL -->
+  <section class="carousel-section">
+    <p class="section-label i18n" data-key="screenshots_label">App screenshots</p>
+    <div class="carousel-placeholder">
+      <div class="carousel-main">
+        <div class="carousel-slides" id="carouselSlides">
+          <div class="carousel-slide"><div class="slide-label i18n" data-key="slide_1">Tutor catalog</div></div>
+          <div class="carousel-slide"><div class="slide-label i18n" data-key="slide_2">Tutor profile</div></div>
+          <div class="carousel-slide"><div class="slide-label i18n" data-key="slide_3">Schedule & booking</div></div>
+          <div class="carousel-slide"><div class="slide-label i18n" data-key="slide_4">Secure chat</div></div>
+          <div class="carousel-slide"><div class="slide-label i18n" data-key="slide_5">Reviews</div></div>
+        </div>
+        <div class="carousel-controls">
+          <button class="carousel-btn" data-carousel="-1" aria-label="Previous">‹</button>
+          <button class="carousel-btn" data-carousel="1"  aria-label="Next">›</button>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots"></div>
+    </div>
+    <div class="video-placeholder" role="button" tabindex="0">
+      <div class="video-play">▶</div>
+      <span class="i18n" data-key="video_placeholder">Demo video — coming soon</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM -->
+  <section class="problem-section fade-in">
+    <p class="section-label i18n" data-key="problem_label">The problem</p>
+    <div class="problem-stat">20–30%</div>
+    <p class="problem-stat-label i18n" data-key="problem_stat_label">taken by existing platforms per lesson</p>
+    <p class="problem-text i18n" data-key="problem_text">Preply, Italki and others take a cut from every lesson.</p>
+  </section>
+
+  <!-- HOW -->
+  <section class="how-section fade-in" id="how">
+    <div class="how-inner">
+      <div class="how-header">
+        <p class="section-label i18n" data-key="how_label">How it works</p>
+        <h2 class="section-title i18n" data-key="how_title">Simple from day one</h2>
+        <div class="how-tabs">
+          <button class="tab-btn active i18n" data-key="tab_tutors" data-tab="tutors">For Tutors</button>
+          <button class="tab-btn i18n"        data-key="tab_students" data-tab="students">For Students</button>
+        </div>
+      </div>
+      <div class="how-steps visible" id="steps-tutors"></div>
+      <div class="how-steps"         id="steps-students"></div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="features-section fade-in" id="features">
+    <p class="section-label i18n" data-key="features_label">What makes it different</p>
+    <h2 class="section-title i18n" data-key="features_title">Built for independence</h2>
+    <div class="features-grid" id="featuresGrid"></div>
+  </section>
+
+  <!-- AUDIENCE -->
+  <section class="audience-section fade-in">
+    <div class="audience-inner">
+      <p class="section-label i18n" data-key="audience_label">Who it's for</p>
+      <h2 class="section-title i18n" data-key="audience_title">For those who value independence</h2>
+      <div class="audience-cards" id="audienceCards"></div>
+    </div>
+  </section>
+
+  <!-- MISSING -->
+  <section class="missing-section fade-in">
+    <p class="section-label i18n" data-key="missing_label">Roadmap</p>
+    <h2 class="section-title i18n" data-key="missing_title">Not here yet, but coming</h2>
+    <ul class="missing-list" id="missingList"></ul>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section fade-in">
+    <p class="section-label i18n" data-key="cta_label">Ready?</p>
+    <h2 class="section-title i18n" data-key="cta_title">Your account. Your students. Your rules.</h2>
+    <p class="cta-sub i18n" data-key="cta_sub">Join Tutor Hub — a platform that works for you, not against you.</p>
+    <a href="https://chuckis.github.io/tutorstr" class="btn-primary i18n" data-key="cta_open" style="font-size:1.05rem;padding:15px 36px;">Open App →</a>
+  </section>
+
+</div><!-- /home-page -->
+
+<!-- FAQ PAGE -->
+<div id="faq-page" class="page">
+  <div class="stub-page">
+    <p class="section-label i18n" data-key="nav_faq">FAQ</p>
+    <h2 class="section-title i18n" data-key="faq_coming">Coming soon</h2>
+    <p class="stub-desc i18n" data-key="faq_desc">We're putting together answers to the most common questions.</p>
+    <button class="btn-back" data-page="home">← <span class="i18n" data-key="back_home">Back to home</span></button>
+  </div>
+</div>
+
+<!-- ABOUT PAGE -->
+<div id="about-page" class="page">
+  <div class="stub-page">
+    <p class="section-label i18n" data-key="nav_about">About</p>
+    <h2 class="section-title i18n" data-key="about_coming">Coming soon</h2>
+    <p class="stub-desc i18n" data-key="about_desc">The story behind Tutor Hub and the principles that guide it.</p>
+    <button class="btn-back" data-page="home">← <span class="i18n" data-key="back_home">Back to home</span></button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-logo">Tutor <span>Hub</span></div>
+  <ul class="footer-links">
+    <li><a href="#" data-page="faq"   class="i18n" data-key="nav_faq">FAQ</a></li>
+    <li><a href="#" data-page="about" class="i18n" data-key="nav_about">About</a></li>
+    <li><a href="https://nostr.com" target="_blank" rel="noopener">Nostr</a></li>
+  </ul>
+  <p class="footer-note i18n" data-key="footer_note">Built on Nostr · Open protocol · No ads</p>
+</footer>
+
+</body>
+</html>
