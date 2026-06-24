@@ -44,20 +44,20 @@
   "features_label": "What makes it different",
   "features_title": "Built for independence",
   "features": [
-    ["💸", "fi-blue", "No commission", "Platform doesn't handle payments — you agree on payment directly."],
-    ["🔑", "fi-blue", "Your account is yours", "No central server can delete or suspend you."],
-    ["🛡️", "fi-green", "Your data, your way", "Profile, schedule, messages — all cryptographically signed by you."],
-    ["🔒", "fi-green", "Private by design", "Messages and lesson notes are protected."],
-    ["📱", "fi-blue", "Works everywhere", "Opens in browser, installs on phone as a PWA."],
-    ["⭐", "fi-green", "Honest reviews", "One review per completed lesson — no fake ratings."],
-    ["🚫", "fi-blue", "Stay in control", "Block unwanted users, report violations."]
+    ["", "fi-blue", "No commission", "Platform doesn't handle payments — you agree on payment directly."],
+    ["", "fi-blue", "Your account is yours", "No central server can delete or suspend you."],
+    ["", "fi-green", "Your data, your way", "Profile, schedule, messages — all cryptographically signed by you."],
+    ["", "fi-green", "Private by design", "Messages and lesson notes are protected."],
+    ["", "fi-blue", "Works everywhere", "Opens in browser, installs on phone as a PWA."],
+    ["", "fi-green", "Honest reviews", "One review per completed lesson — no fake ratings."],
+    ["", "fi-blue", "Stay in control", "Block unwanted users, report violations."]
   ],
   "audience_label": "Who it's for",
   "audience_title": "For those who value independence",
   "audience": [
-    ["🎓", "Tired of the cut?", "Tutors who want to stop giving 20% of their income to a middleman."],
-    ["📚", "Direct learning", "Students who want to work with tutors without unnecessary intermediaries."],
-    ["🔐", "Your data, your rules", "Anyone who doesn't want a corporation owning their learning history."]
+    ["", "Tired of the cut?", "Tutors who want to stop giving 20% of their income to a middleman."],
+    ["", "Direct learning", "Students who want to work with tutors without unnecessary intermediaries."],
+    ["", "Your data, your rules", "Anyone who doesn't want a corporation owning their learning history."]
   ],
   "missing_label": "Roadmap",
   "missing_title": "Not here yet, but coming",
