@@ -218,16 +218,19 @@ nav {
   border: 1px solid var(--border); background: var(--bg3);
   box-shadow: var(--shadow);
 }
-.carousel-main { aspect-ratio: 16/9; overflow: hidden; }
+.carousel-main { max-height: 520px; overflow: hidden; }
 .carousel-slides {
   display: flex; width: 100%; height: 100%;
   transition: transform 0.42s cubic-bezier(0.4,0,0.2,1);
 }
 .carousel-slide {
   min-width: 100%; height: 100%;
-  display: flex; align-items: center; justify-content: center;
+  display: flex; align-items: flex-start; justify-content: flex-start;
   flex-direction: column; gap: 0.75rem; color: var(--text-dim);
+  overflow-y: auto;
 }
+.carousel-slide img { display: block; max-width: 360px; width: 100%; margin: 0.5rem auto 0; flex-shrink: 0; }
+.carousel-slide .slide-label { margin: 0 auto 0.75rem; flex-shrink: 0; }
 .slide-icon { font-size: 2.75rem; opacity: 0.25; }
 .slide-label { font-size: 0.82rem; font-weight: 500; opacity: 0.4; letter-spacing: 0.05em; }
 
@@ -258,6 +261,10 @@ nav {
   cursor: pointer; transition: all 0.2s; border: none; padding: 0;
 }
 .carousel-dot.active { opacity: 1; background: var(--accent); width: 18px; border-radius: 3px; }
+
+.carousel-slide::-webkit-scrollbar { width: 4px; }
+.carousel-slide::-webkit-scrollbar-track { background: transparent; }
+.carousel-slide::-webkit-scrollbar-thumb { background: var(--border); border-radius: 2px; }
 
 .video-placeholder {
   max-width: 880px; margin: 1.5rem auto 0;
@@ -446,6 +453,8 @@ footer {
   .how-tabs { width: 100%; }
   .tab-btn { flex: 1; text-align: center; padding: 7px 10px; font-size: 0.82rem; }
   .btn-cta-nav { font-size: 0.8rem; padding: 6px 13px; }
+  .carousel-main { max-height: 75vh; }
+  .carousel-slide img { max-width: 280px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

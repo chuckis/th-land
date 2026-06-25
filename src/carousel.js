@@ -1,5 +1,9 @@
-export const SLIDES = 5;
+export const SLIDES = 9;
 let ci = 0;
+let timer;
+
+function startTimer() { timer = setInterval(() => moveCarousel(1), 4200); }
+function stopTimer() { clearInterval(timer); }
 
 export function buildDots() {
   const dots = document.getElementById('carouselDots');
@@ -20,4 +24,10 @@ export function moveCarousel(dir) {
   goSlide((ci + dir + SLIDES) % SLIDES);
 }
 
-setInterval(() => moveCarousel(1), 4200);
+const placeholder = document.querySelector('.carousel-placeholder');
+if (placeholder) {
+  placeholder.addEventListener('mouseenter', stopTimer);
+  placeholder.addEventListener('mouseleave', startTimer);
+}
+
+startTimer();
